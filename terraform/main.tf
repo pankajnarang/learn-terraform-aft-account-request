@@ -18,4 +18,18 @@ module "sandbox" {
     change_requested_by = "SecurityOperations"
     change_reason       = "AWSControlTowerAccountFactoryForTerraformDemo"
   }
+
+   custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "sandbox"
 }
+
+
+
+
+
+ 
+
+  
