@@ -1,13 +1,13 @@
-module "stno" {
+module "demo" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "theopensource007+stno@gmail.com"
-    AccountName               = "STNO"
+    AccountEmail              = "theopensource007+demo@gmail.com"
+    AccountName               = "demo"
     ManagedOrganizationalUnit = "Controllers"
-    SSOUserEmail              = "theopensource007+stno@gmail.com"
-    SSOUserFirstName          = "STNO"
-    SSOUserLastName           = "HUB"
+    SSOUserEmail              = "theopensource007+demo@gmail.com"
+    SSOUserFirstName          = "theopensource007"
+    SSOUserLastName           = "demo"
   }
 
   account_tags = {
