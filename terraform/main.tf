@@ -54,31 +54,3 @@ module "demo01" {
 
   account_customizations_name = "sandbox"
 } 
-
-module "demo02" {
-  source = "./modules/aft-account-request"
-
-  control_tower_parameters = {
-    AccountEmail              = "theopensource007+demo02@gmail.com"
-    AccountName               = "demo02"
-    ManagedOrganizationalUnit = "Controllers"
-    SSOUserEmail              = "theopensource007+demo02@gmail.com"
-    SSOUserFirstName          = "theopensource007"
-    SSOUserLastName           = "demo02"
-  }
-
-  account_tags = {
-    "CreatedBy " = "PankajNarang"
-  }
-
-  change_management_parameters = {
-    change_requested_by = "SecurityOperations"
-    change_reason       = "AWSControlTowerAccountFactoryForTerraformDemo"
-  }
-
-   custom_fields = {
-    group = "non-prod"
-  }
-
-  account_customizations_name = "sandbox"
-}
